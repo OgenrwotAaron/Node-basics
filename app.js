@@ -10,7 +10,7 @@ let message= `User ${user.username} started App at ${date}`
 if(userData.log()){
     fs.appendFile("helo.txt",message,(err)=>{
         if(err){
-            console.log("Not able to append");
+            console.log("Not able to append to file");
         }
     })
 }
